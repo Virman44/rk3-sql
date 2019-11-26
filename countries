@@ -1,0 +1,7 @@
+create table countries (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, City Char(20), Country Char(20), Population Int(20), Code Int(20));
+
+INSERT INTO countries (id, City, Country, Population, Code) VALUES ('1', 'Moscow', 'Russia', '146000000', 7), ('2', 'Vashington', 'USA', '350000000', 1800), ('3', 'Kiev', 'Ukrain', '50000000', 345), ('4', 'Kair', 'Egypt', '40000000', 456), ('5', 'Pekin', 'China', '1400000000', 567), ('6', 'Paris', 'France', '60000000', 678), ('7', 'Berlin', 'Germany', '55000000', 138), ('8', 'London', 'England', '70000000', 1900), ('9', 'Varshava', 'Poland', '48000000', 257), ('10', 'Tokyo', 'Japan', '120000000', 2974);
+
+UPDATE countries SET Population='150000000' WHERE Country='Russia';
+
+SELECT * FROM countries ORDER BY Country;
